@@ -32,7 +32,7 @@ jobs:
           context: ./carrental-backend
           file: ./carrental-backend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Manoj-ansible-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/manoj-ansible-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./carrental-frontend
           file: ./carrental-frontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Manoj-ansible-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/manoj-ansible-frontend:latest
